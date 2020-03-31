@@ -62,14 +62,14 @@ for branch in repo.branches:
                             files_modified.append(
                                 (
                                     L.p / (
-                                        L.b / file.name,
+                                        L.h4 / file.name,
                                         raw(html_diff),
                                     )
                                 )
                             )
 
             html = L.p / (
-                commit.message,
+                L.h1 / commit.message,
                 files_modified,
             )
 
